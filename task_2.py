@@ -1,9 +1,9 @@
 def my_split(text):
     word = ""
     result = []
-    for character in data:
+    for character in text:
         if character != " ":
             word = word + character
         elif character := " ":
-            result.append(word) 
-    return [text]
+            result.append(word)
+    return text
