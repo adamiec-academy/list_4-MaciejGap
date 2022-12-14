@@ -4,6 +4,9 @@ def my_split(text):
     for character in text:
         if character != " ":
             word = word + character
-        else:
+        elif character == " " and word != "":
             result.append(word)
-    return text
+            word = ""
+    if word != "":
+        result.append(word)
+    return result
